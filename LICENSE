@@ -36,12 +36,22 @@ O. Of
 S. Service
 
        -+--=:=- Notise -=:=--+-
-APDOS would never had existed without LOIC (Low Orbit Ion Cannon). The funny idea of an off-topic loading screen for a DDoS/DoS client originates from LOIC.
+APDOS would never had existed without LOIC
+(Low Orbit Ion Cannon).The funny idea of an off-topic 
+loading screen for a DDoS/DoS client originates from LOIC.
 
      -+--=:=- Disclaimers -=:=--+-
-Use APDOS at your own risk (even though it is perpously not powerful), DDoS/DoS attacks are illegal in most countries. For protection I recommend the use of a VPN (Virtual Private Network) at all times! We the creators are not responsible for your choices or actions. 
+Use APDOS at your own risk (even though it 
+is perpously not powerful), DDoS/DoS attacks are 
+illegal in most countries. For protection I recommend 
+the use of a VPN (Virtual Private Network) at all times!
+We the creators are not responsible for your choices or actions. 
 
-I do not claim full credit for the original creation of the base functionality of this client. I used scripts as a base to start and "modded" them [Legally] so it could function neatly as a whole with the other scripts. I will give this time to mention the creators of the base coding.
+I do not claim full credit for the original creation of the base 
+functionality of this client. I used scripts as a base to start 
+and "modded" them [Legally] so it could function neatly as a whole 
+with the other scripts. I will give this time to mention the creators 
+of the base coding.
 -+--=:=- Credits
          -=:=--+-{DDoS}-+--=:=-
 -Base Script
@@ -75,14 +85,19 @@ I do not claim full credit for the original creation of the base functionality o
 So thank you to all the creators who help make this script possible!
 
       -+--=:=- Use / Edits -=:=--+-
-APDOS intended use is to NON-MALISOUSLY atempt Dinal of Service on small servers as a stress test. (And by stating this it becomes legal to publish)
+APDOS intended use is to NON-MALISOUSLY attempt
+Denial of Service on small servers as a stress test. 
+(And by stating this it becomes legal to publish)
 
-The intended program for this to run on is Pythonista 3 (c) from the AppSore; provided by Omz:Software (c) 2016. Not extened moduals are required to run this version.
+The intended program for this to run on is Pythonista 3 (c) 
+from the AppSore; provided by Omz:Software (c) 2016. Not extended modules 
+are required to run this version.
 
 I hereby grant allowance to all who use this program, with the following:
 -Allowed to change the script
 -Allowed to alter use
--Allowed to republish if a significate amount of changes are applied to help improve or add to the functionality of the script as a whole
+-Allowed to republish if a significate amount of changes 
+are applied to help improve or add to the functionality of the script as a whole
 -Allowed to use (at their own risk)
 
 I do NOT grant:
