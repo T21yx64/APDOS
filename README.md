@@ -1,5 +1,5 @@
 # APDOS
-APDOS Client
+APDOS DDOoS Client Mobile
 
 # Basics
 This is a extremely simple DDOS client.
