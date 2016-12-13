@@ -1,5 +1,16 @@
 import socket, sys, os, time, itertools, threading
 
+# start logo
+print "###################################"
+print "     _    ____  ____   ___  _____"
+print "    / \  |  _ \|  _ \ / _ \/ ___|"
+print "   / _ \ | |_) | | | | | | \___ \ "
+print "  / ___ \|  __/| |_| | |_| |___) )"
+print " /_/   \_\_|   |____/ \___/|____/ "
+print ""
+print "###################################"
+print ""
+time.sleep(2)
 print "-=-+- -+-=- -=-+- -+-=-"
 print "       - APDOS -       "
 print "-=-+- -+-=- -=-+- -+-=-"
