@@ -10,16 +10,16 @@ print " /_/   \_\_|   |____/ \___/|____/ "
 print ""
 print "###################################"
 print ""
-time.sleep(2)
-print "-=-+- -+-=- -=-+- -+-=-"
-print "       - APDOS -       "
-print "-=-+- -+-=- -=-+- -+-=-"
-print "-+-=-   Version   -=-+-"
-print "-=:=-    GREAT    -=:=-"
-print "-=:=-   OKAYISH   -=:=-"
-print "-=:=-  FEEDBACKS  -=:=-"
-print "-=-+- -+-=- -=-+- -+-=-"
-version = raw_input("-+-=- ")
+time.sleep(3)
+print "     -=-+- -+-=-  -=-+- -+-=-"
+print "             - APDOS -       "
+print "     -=-+- -+-=-  -=-+- -+-=-"
+print "     -+-=-    Version   -=-+-"
+print "     -=:=-     GREAT    -=:=-"
+print "     -=:=-    OKAYISH   -=:=-"
+print "     -=:=-   FEEDBACKS  -=:=-"
+print "     -=-+- -+-=-  -=-+- -+-=-"
+version = raw_input("     -+-=- ")
 if (version == 'OKAYISH'):
 	print ":D\n"
 if (version == 'okayish'):
