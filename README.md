@@ -17,4 +17,4 @@ the NSA agents out there who might skim over this!
 -A 100 year old server
 -And the ability to type
 
-# ADD NUMBER TO SYS.ARGV[1] TO MULTIPLE STRENGTH FOR THE 'GREAT' ATTACK!
+# Argv Numbers Increase Attack
