@@ -1,6 +1,8 @@
 # APDOS
 APDOS is a Denail Of Service Program developed by Sav-SEC / SAVAGEO.
 
+#MOST POWERFUL DDOS ON IOS 10
+
 # Basics
 This is a extremely simple DDOS client.
 It's main purpose is to show off the possibility
