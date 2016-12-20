@@ -6,7 +6,7 @@ credits = (
 	'     -+--=:=-  -++-  -=:=--+-\n'
 	)
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(1024)
+bytes = random._urandom(1024) * int(sys.argv[1])
 def pres():
 	print credits
 pres()
