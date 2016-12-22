@@ -24,9 +24,9 @@ print "     -=:=-   FEEDBACKS  -=:=-"
 print "     -=-+- -+-=-  -=-+- -+-=-"
 version = raw_input("     -+-=- ")
 if (version == 'OKAYISH'):
-	print ":D\n"
+	print ":D"
 if (version == 'okayish'):
-	print ":D\n"
+	print ":D"
 server = raw_input("SERVER: ")
 port = raw_input("PORT: ")
 type = raw_input("PAYLOAD: ")
@@ -67,6 +67,7 @@ if type == "skip":
 	print "-=-+- -+-=-  -=-+- -+-=-"
 	print "   - APDOS COMPLETE -   "
 	print "-=-+- -+-=-  -=-+- -+-=-"
+	sys.exit()
 	
 	
 print "-+--=- " + server  + " -=--+-\n"
@@ -308,3 +309,4 @@ for i in range(1, 1000):
 print "-=-+- -+-=-  -=-+- -+-=-"
 print "   - APDOS COMPLETE -   "
 print "-=-+- -+-=-  -=-+- -+-=-"
+sys.exit()
