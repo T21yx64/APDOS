@@ -2,6 +2,9 @@
 
 - Run APDOS.py on Pythonista 3
 
+!!! SET YOUR SYS ARGV TO EITHER 1-9 !!!
+!!! YOUR SYS ARGV DETERMINES POWER  !!!
+
 - On the first line that pops up, write 
 which version you would like to use.
 
