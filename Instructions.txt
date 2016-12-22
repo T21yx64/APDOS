@@ -12,6 +12,8 @@ which version you would like to use.
 or 'feedbacks' then you won't 
 have to fill in the next 2 lines.
 
+!!! WHEN IT SAYS "type:" enter 'skip' if you want to skip the long boot !!!
+
 - If you are running the original 
 APDOS (really weak) then fill in the 
 host and the data that will be sent. 
