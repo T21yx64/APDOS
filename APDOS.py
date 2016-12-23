@@ -167,7 +167,9 @@ def animate():
 		sys.stdout.flush()
 		time.sleep(0.1)
 	try:
-		hname = socket.gethostbyaddr(server)
+		from urllib2 import urlopen
+		myip = urlopen('http://ip.42.pl/raw').read()
+		hname = socket.gethostbyaddr(myip)
 		vpn = "[NO]"
 	except:
 		vpn = "[YES]"
