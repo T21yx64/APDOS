@@ -28,7 +28,7 @@ if sys.argv[2] == "yellow":
 if sys.argv[2] == "aqua":
 	color = "aqua"
 if sys.argv[2] == "sexy":
-	color = "magenta"
+	color = "sexy"
 if int(sys.argv[1]) <= 2:
 	import thelogo
 console.set_font('System-Bold', 15)
