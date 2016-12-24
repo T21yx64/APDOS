@@ -1,11 +1,53 @@
 import socket, sys, os, time, itertools, threading, speech, console
 console.set_font()
 console.set_color()
-if int(sys.argv[1]) <= 1:
+if len(sys.argv) > 1:
+	pass
+else:
+	print ""
+	print "      -+--=:=-  -+-  -=:=--+-"
+	console.set_color(0, 130, 0)
+	print "        Please Set sys.argv"
+	console.set_color()
+	print "      -+--=:=-  -+-  -=:=--+-"
+	console.set_color(0, 130, 0)
+	print "               Usage"
+	print "        <Strength> <Colour>"
+	console.set_color()
+	print "      -+--=:=-  -+-  -=:=--+-"
+	print ""
+	sys.exit()
+if sys.argv[2] == "blue":
+	color = "blue"
+if sys.argv[2] == "red":
+	color = "red"
+if sys.argv[2] == "green":
+	color = "green"
+if sys.argv[2] == "yellow":
+	color = "yellow"
+if sys.argv[2] == "aqua":
+	color = "aqua"
+if sys.argv[2] == "sexy":
+	color = "magenta"
+if int(sys.argv[1]) <= 2:
 	import thelogo
 console.set_font('System-Bold', 15)
 print "###################################"
-console.set_color(130, 0, 0)
+try:
+	if color == "blue":
+		console.set_color(0, 0, 130)
+	if color == "red":
+		console.set_color(130, 0, 0)
+	if color == "yellow":
+		console.set_color(130, 130, 0)
+	if color == "aqua":
+		console.set_color(0, 130, 130)
+	if color == "sexy":
+		console.set_color(130, 0, 130)
+	if color == "green":
+		console.set_color(0, 130, 0)
+except:
+	console.set_color(130, 0, 0)
 print "     _    ____  ____   ___  ____ "
 print "    / \  |  _ \|  _ \ / _ \/ ___|"
 print "   / _ \ | |_) | | | | | | \___ \ "
@@ -29,7 +71,21 @@ print "     -=-+- -+-=-  -=-+- -+-=-"
 version = raw_input("     -+-=- ")
 print "     -=-+- -+-=-  -=-+- -+-=-\n"
 time.sleep(1)
-console.set_color(130, 0, 0)
+try:
+	if color == "blue":
+		console.set_color(0, 0, 130)
+	if color == "red":
+		console.set_color(130, 0, 0)
+	if color == "yellow":
+		console.set_color(130, 130, 0)
+	if color == "aqua":
+		console.set_color(0, 130, 130)
+	if color == "sexy":
+		console.set_color(130, 0, 130)
+	if color == "green":
+		console.set_color(0, 130, 0)
+except:
+	console.set_color(130, 0, 0)
 server = raw_input("[ ] SERVER: ")
 port = raw_input("[ ] PORT: ")
 type = raw_input("[ ] PAYLOAD: ")
@@ -41,7 +97,21 @@ if type == "skip":
 	def udp():
 		import UDPdos
 		import console
-		console.set_color(130, 0, 0)
+		try:
+			if color == "blue":
+				console.set_color(0, 0, 130)
+			if color == "red":
+				console.set_color(130, 0, 0)
+			if color == "yellow":
+				console.set_color(130, 130, 0)
+			if color == "aqua":
+				console.set_color(0, 130, 130)
+			if color == "sexy":
+				console.set_color(130, 0, 130)
+			if color == "green":
+				console.set_color(0, 130, 0)
+		except:
+			console.set_color(130, 0, 0)
 		print ""
 		print "      -=-+- -+-=-  -=-+- -+-=-"
 		print "         - APDOS COMPLETE -   "
@@ -51,7 +121,21 @@ if type == "skip":
 	def feed():
 		import apdosFEED
 		import console
-		console.set_color(130, 0, 0)
+		try:
+			if color == "blue":
+				console.set_color(0, 0, 130)
+			if color == "red":
+				console.set_color(130, 0, 0)
+			if color == "yellow":
+				console.set_color(130, 130, 0)
+			if color == "aqua":
+				console.set_color(0, 130, 130)
+			if color == "sexy":
+				console.set_color(130, 0, 130)
+			if color == "green":
+				console.set_color(0, 130, 0)
+		except:
+			console.set_color(130, 0, 0)
 		print ""
 		print "      -=-+- -+-=-  -=-+- -+-=-"
 		print "         - APDOS COMPLETE -   "
@@ -83,7 +167,21 @@ if type == "skip":
 	for i in range(1, 1000):
 		attack()
 	import console
-	console.set_color(130, 0, 0)
+	try:
+			if color == "blue":
+				console.set_color(0, 0, 130)
+			if color == "red":
+				console.set_color(130, 0, 0)
+			if color == "yellow":
+				console.set_color(130, 130, 0)
+			if color == "aqua":
+				console.set_color(0, 130, 130)
+			if color == "sexy":
+				console.set_color(130, 0, 130)
+			if color == "green":
+				console.set_color(0, 130, 0)
+	except:
+		console.set_color(130, 0, 0)
 	print ""
 	print "      -=-+- -+-=-  -=-+- -+-=-"
 	print "         - APDOS COMPLETE -   "
@@ -224,7 +322,21 @@ donea = True
 def udp():
 	import UDPdos
 	import console
-	console.set_color(130, 0, 0)
+	try:
+			if color == "blue":
+				console.set_color(0, 0, 130)
+			if color == "red":
+				console.set_color(130, 0, 0)
+			if color == "yellow":
+				console.set_color(130, 130, 0)
+			if color == "aqua":
+				console.set_color(0, 130, 130)
+			if color == "sexy":
+				console.set_color(130, 0, 130)
+			if color == "green":
+				console.set_color(0, 130, 0)
+	except:
+		console.set_color(130, 0, 0)
 	print ""
 	print "      -=-+- -+-=-  -=-+- -+-=-"
 	print "         - APDOS COMPLETE -   "
@@ -234,7 +346,21 @@ def udp():
 def feed():
 	import apdosFEED
 	import console
-	console.set_color(130, 0, 0)
+	try:
+			if color == "blue":
+				console.set_color(0, 0, 130)
+			if color == "red":
+				console.set_color(130, 0, 0)
+			if color == "yellow":
+				console.set_color(130, 130, 0)
+			if color == "aqua":
+				console.set_color(0, 130, 130)
+			if color == "sexy":
+				console.set_color(130, 0, 130)
+			if color == "green":
+				console.set_color(0, 130, 0)
+	except:
+		console.set_color(130, 0, 0)
 	print ""
 	print "      -=-+- -+-=-  -=-+- -+-=-"
 	print "         - APDOS COMPLETE -   "
@@ -266,7 +392,21 @@ def attack():
 	s.close()
 for i in range(1, 1000):
 	attack()
-console.set_color(130, 0, 0)
+try:
+	if color == "blue":
+		console.set_color(0, 0, 130)
+	if color == "red":
+		console.set_color(130, 0, 0)
+	if color == "yellow":
+		console.set_color(130, 130, 0)
+	if color == "aqua":
+		console.set_color(0, 130, 130)
+	if color == "sexy":
+		console.set_color(130, 0, 130)
+	if color == "green":
+		console.set_color(0, 130, 0)
+except:
+	console.set_color(130, 0, 0)
 print ""
 print "      -=-+- -+-=-  -=-+- -+-=-"
 print "         - APDOS COMPLETE -   "
