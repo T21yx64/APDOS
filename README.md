@@ -1,5 +1,5 @@
 # APDOS
-APDOS is a Denail Of Service Program developed by Sav-SEC / SAVAGEO. Need Help? @Russian_Otter (insta)
+APDOS is a Denail Of Service Program developed by Sav-SEC / SAVAGEO. Need Help? @savsec.RussianOtter (insta)
 
 #MOST POWERFUL DDoS ON iOS 10
 
