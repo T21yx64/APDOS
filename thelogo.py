@@ -1,8 +1,8 @@
 import console, time, speech
 def logo():
+	console.set_color()
 	console.set_font('AnonymousPro-Bold', 15.35)
 	print "# -=-=-=-=-=-=- #  # -=-=-=-=-=-=- #"
-	console.set_color(0, 0, 0)
 	print ""
 	print "     ____.------''''--.___"
 	print "         ____.----'---._/ '--"
@@ -12,19 +12,14 @@ def logo():
 	print "         _-'              '----'"
 	print "        ||"
 	print "        ||"
-	console.set_color()
 	print "        '.__   Savage"
-	console.set_color(0, 0, 0)
 	print "            '--------."
-	console.set_color()
 	print "            Official ''-."
-	console.set_color(0, 0, 0)
 	print "                        |'."
 	print "                       /  |"
 	print "                    __/__.'"
 	print "                   ' /"
 	print ""
-	console.set_color()
 	print "# -=-=-=-=-=-=- #  # -=-=-=-=-=-=- #"
 	print ""
 logo()
