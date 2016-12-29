@@ -37,37 +37,59 @@ S. Service
 
        -+--=:=- Notise -=:=--+-
 APDOS would never had existed without LOIC
-(Low Orbit Ion Cannon).The funny idea of an off-topic 
+(Low Orbit Ion Cannon). The funny idea of an off-topic 
 loading screen for a DDoS/DoS client originates from LOIC.
+And now APDOS is the strongest iOS DDoS Client.
+(DDoS Attack Script is not made by LOIC)
 
      -+--=:=- Disclaimers -=:=--+-
-Use APDOS at your own risk (even though it 
-is perpously not powerful), DDoS/DoS attacks are 
+Use APDOS at your own risk. DDoS/DoS attacks are 
 illegal in most countries. For protection I recommend 
 the use of a VPN (Virtual Private Network) at all times!
 We the creators are not responsible for your choices or actions. 
 
-I do not claim full credit for the original creation of the base 
-functionality of this client. I used scripts as a base to start 
+I do not claim full credit for the 1st though 6th creations of the
+base functionality of this client. I used scripts as a base to start 
 and "modded" them [Legally] so it could function neatly as a whole 
 with the other scripts. I will give this time to mention the creators 
-of the base coding.
+of the base coding. Currently all the scripts do not fall under ownership
+of any of the base creaters. All clients used in APDOS have undergone major
+changes in code and software. The scripts are no where close to what they started
+out as due to the mass amount of changes made by: SavSec. Most function 
+completely differently then the base scripts so ownership of theses current
+and future scripts now fall under ownership of SavageOfficial. If more then 30
+MAJOR FUNCTIONALITY changes are made on these current or future scripts and if
+they are approved by SavSec, then ownership of the current and future clients
+that were publicly modded by a different developer, then the client will become
+their ownership. Until your work has hit the 30+ major changes, then your copy
+of these scripts will be mod versions and still under ownership of SavageOfficial.
+THE FIRST SET SCRIPTS PUBLISHED HERE FALL UNDER OWNERSHIP OF OTHER DEVELOPERS.
+ALL SCRIPTS AFTER THE 15+ UPDATE MARK ARE OWNED BY SAVSEC.
 -+--=:=- Credits
          -=:=--+-{DDoS}-+--=:=-
 -Base Script
   •tinsloppy [Github]
   https://gist.github.com/tinsloppy/1312196
 
--Modded Script
+-Modded Script 25+ Changes
   •RussianOtter [Github]
   @Russian_Otter [Instagram]
 
 -SECOND DDoS [public code]
   •Thedabosk189 NetArrivials TEAM
   http://hazardedit.com/forum/memberlist.php?mode=viewprofile&u=78&sid=b9b29ce78392f8a8cce4fd4bd97fb64c
+  NOTICE: The pure amount of force that apdos is today, was not made by NetArrivials.
+  NetArrivials was the base script used to make the client able to send basic data.
+  MORE THEN 50 CHANGES HAVE BEEN MADE TO THE SCRIPT BY SAVSEC TO MAKE IT STRONGER AND NOW ONLY 10% OF THE SCRIPT IS TE SAME
+  So I thank the developers there for making a small script that sends data.
+  But SavSec is what made the script extremely powerful and new.
+  So at this point the script doesn't have ownership to them, but the 1st-5th versions of UDPdos does.
   
 -SECOND DDoS MODDED:
   •Russian_Otter
+  
+-SECOND DDoSv4+ Credit:
+  •SavSec
   
 -SECOND DDoSv3 DEBUGGER / INSPERATION:
   •Injection 
