@@ -5,8 +5,7 @@ def credits():
 	print "\n     -+--=:=-  -++-  -=:=--+-"
 	console.set_color()
 	console.set_font('HoeflerText-Black')
-	print " " * 22 + "Base: NetArrivals Team"
-	print " " * 25 + "Mod: Savage Official"
+	print " " * 25 + "     SavageOfficial"
 	console.set_font()
 	console.set_color(130, 0, 0)
 	print "     -+--=:=-  -++-  -=:=--+-\n"
