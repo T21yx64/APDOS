@@ -1,0 +1,328 @@
+import sys, console, time, threading, itertools
+
+a = "."
+print ""
+sys.stdout.write(" Starting")
+for i in range(15):
+	sys.stdout.write(a)
+	time.sleep(0.9)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+print ""
+sys.stdout.write(" Great Script Ready")
+for i in range(5):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(1)
+sys.stdout.write(" Feedback Script Ready")
+for i in range(2):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.8)
+sys.stdout.write(" Okay Script Ready")
+for i in range(6):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(1)
+sys.stdout.write(" Client Updated")
+for i in range(9):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.5)
+sys.stdout.write(" Developer Mode")
+for i in range(9):
+	sys.stdout.write(a)
+	time.sleep(0.07)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(1)
+sys.stdout.write(" System Ready")
+for i in range(11):
+	sys.stdout.write(a)
+	time.sleep(0.05)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.7)
+sys.stdout.write(" APDOS Drive Ready")
+for i in range(6):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,1,0)
+sys.stdout.write("WARNING")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(1)
+sys.stdout.write(" APDOS VPN Service")
+for i in range(6):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,1,0)
+sys.stdout.write("WARNING")
+console.set_color()
+sys.stdout.write("]\n")
+print ""
+print " Rebuilding /root/APDOS-v5.2.8.6DV8_module.py"
+time.sleep(0.7)
+print " No module nvidia found for kernal APDOS-v5.2.8.6DV8_module.py"
+time.sleep(0.2)
+print ""
+sys.stdout.write(" APDOS_shell.py")
+for i in range(9):
+	sys.stdout.write(a)
+	time.sleep(0.03)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,1,0)
+sys.stdout.write("WARNING")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.03)
+sys.stdout.write(" APDOS_botnet.py")
+for i in range(8):
+	sys.stdout.write(a)
+	time.sleep(0.07)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,1,0)
+sys.stdout.write("WARNING")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.03)
+sys.stdout.write(" Administrative OP")
+for i in range(6):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,0,0)
+sys.stdout.write("FAILED")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.05)
+sys.stdout.write(" Administrative Auth")
+for i in range(4):
+	sys.stdout.write(a)
+	time.sleep(0.08)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,0,0)
+sys.stdout.write("FAILED")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.2)
+sys.stdout.write(" Administrative Kernal")
+for i in range(2):
+	sys.stdout.write(a)
+	time.sleep(0.08)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,0,0)
+sys.stdout.write("FAILED")
+console.set_color()
+sys.stdout.write("]\n")
+print ""
+print " /root/APDOS_botnet.py offline internal error 'non-administrative'"
+time.sleep(0.03)
+print " /root/APDOS_shell.py offline internal error 'non-administrative'"
+time.sleep(0.03)
+print " /root/thelogo.py ready for kernal"
+time.sleep(0.03)
+print " 'Colon Three Daemon' not paired to /root/APDOS_botnet.py"
+time.sleep(0.03)
+print " APDOS-v5.2.8.6DV8_module.py not connected APDOS Drive"
+time.sleep(0.03)
+print " /root/nvidia kernal operation module not available"
+time.sleep(0.03)
+print " /root/documents/APDOS_Debug active for kernal backup drive"
+time.sleep(0.03)
+print ""
+time.sleep(0.04)
+sys.stdout.write(" Debugging")
+for i in range(14):
+	sys.stdout.write(a)
+	time.sleep(0.9)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+sys.stdout.write(" Etho0")
+for i in range(18):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.3)
+sys.stdout.write(" Etho1")
+for i in range(18):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.1)
+sys.stdout.write(" LAN Network")
+for i in range(12):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.2)
+sys.stdout.write(" CTDaemon._c1.py")
+for i in range(8):
+	sys.stdout.write(a)
+	time.sleep(0.09)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,0,0)
+sys.stdout.write("FAILED")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.2)
+sys.stdout.write(" CTDaemon._c2.py")
+for i in range(8):
+	sys.stdout.write(a)
+	time.sleep(0.09)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,0,0)
+sys.stdout.write("FAILED")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.2)
+sys.stdout.write(" CTDaemon._c3.py")
+for i in range(8):
+	sys.stdout.write(a)
+	time.sleep(0.08)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,0,0)
+sys.stdout.write("FAILED")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.2)
+sys.stdout.write(" CTDaemon._c4.py")
+for i in range(8):
+	sys.stdout.write(a)
+	time.sleep(0.08)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,0,0)
+sys.stdout.write("FAILED")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.2)
+sys.stdout.write(" APDOS Botnet Sync")
+for i in range(6):
+	sys.stdout.write(a)
+	time.sleep(0.02)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(1,1,0)
+sys.stdout.write("WARNING")
+console.set_color()
+sys.stdout.write("]\n")
+time.sleep(0.8)
+print ""
+time.sleep(0.03)
+print " /root/APDOS active for attack"
+time.sleep(0.03)
+print " /root/FEEDBACKS active for scanning"
+time.sleep(0.03)
+print " /root/UDPdosactive for denial of service"
+time.sleep(0.03)
+print " /root/thelogo is ready for display"
+time.sleep(0.03)
+print " /root/APDOS_Botnet is not found"
+time.sleep(0.03)
+print " Scans for APDOS_Botnet have resulting in '0' findings"
+time.sleep(0.03)
+print " Disconnecting botnet sync attempts sucessful"
+time.sleep(0.03)
+print " /root/APDOS_shell server is not found"
+time.sleep(0.03)
+print " Disconnecting all attempts to sync successful"
+time.sleep(0.03)
+print " /root/APDOS_SecureVPN not found"
+time.sleep(0.03)
+print " Disconnecting all attemps successful"
+time.sleep(0.03)
+print " APDOS-v5.2.8.6DV8_module.py not connected APDOS Drive"
+time.sleep(0.03)
+print " /root/nvidia kernal operation module not available"
+time.sleep(0.03)
+print " /root/documents/APDOS_Debug active for kernal backup drive"
+time.sleep(0.03)
+print " /root/APDOS_botnet.py offline internal error 'non-administrative'"
+time.sleep(0.03)
+print " /root/APDOS_shell.py offline internal error 'non-administrative'"
+time.sleep(0.03)
+print " Rebuilding /root/APDOS-v5.2.8.6DV8_module.py"
+time.sleep(0.04)
+print " No module nvidia found for kernal APDOS-v5.2.8.6DV8_module.py"
+time.sleep(0.03)
+print ""
+sys.stdout.write(" Starting APDOS")
+for i in range(9):
+	sys.stdout.write(a)
+	time.sleep(1)
+	sys.stdout.flush()
+sys.stdout.write(" [")
+console.set_color(0,1,0)
+sys.stdout.write("  OK  ")
+console.set_color()
+sys.stdout.write("]\n")
+print ""
+import APDOSv2
