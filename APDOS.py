@@ -16,6 +16,25 @@ else:
 	console.set_color()
 	print "      -+--=:=-  -+-  -=:=--+-"
 	print ""
+	print "      -+--=:=-  -+-  -=:=--+-"
+	console.set_color(1, 1, 1)
+	print "       -+- Color Options -+-"
+	console.set_color()
+	print "      -+--=:=-  -+-  -=:=--+-"
+	print ""
+	console.set_color(255, 0, 0)
+	print "      -+--=:=-  red  -=:=--+-"
+	console.set_color(255, 255, 0)
+	print "      -+--=:=- yellow -=:=-+-"
+	console.set_color(0, 255, 0)
+	print "      -+--=:=- green -=:=--+-"
+	console.set_color(0, 255, 255)
+	print "      -+--=:=-  aqua -=:=--+-"
+	console.set_color(0, 0, 255)
+	print "      -+--=:=-  blue -=:=--+-"
+	console.set_color(255, 0, 255)
+	print "      -+--=:=-  sexy -=:=--+-"
+	console.set_color()
 	sys.exit()
 if sys.argv[2] == "blue":
 	color = "blue"
@@ -29,8 +48,10 @@ if sys.argv[2] == "aqua":
 	color = "aqua"
 if sys.argv[2] == "sexy":
 	color = "sexy"
-if int(sys.argv[1]) <= 2:
+if int(sys.argv[1]) == 1:
 	import thelogo
+if sys.argv[2] == "debug":
+	import APDOS_Debug
 console.set_font('System-Bold', 15)
 print "###################################"
 try:
@@ -217,6 +238,7 @@ t = threading.Thread(target=animate)
 t.start()
 time.sleep(5)
 done1 = True
+time.sleep(0.5)
 done2 = False
 def animate():
 	for c in itertools.cycle(['|', '/', '-', '\\']):
@@ -230,6 +252,7 @@ t = threading.Thread(target=animate)
 t.start()
 time.sleep(3)
 done2 = True
+time.sleep(0.5)
 done = False
 def animate():
 	for c in itertools.cycle(['|', '/', '-', '\\']):
@@ -243,6 +266,7 @@ t = threading.Thread(target=animate)
 t.start()
 time.sleep(5)
 done = True
+time.sleep(0.5)
 done1 = False
 def animate():
 	for d in itertools.cycle(['|', '/', '-', '\\']):
@@ -256,6 +280,7 @@ t = threading.Thread(target=animate)
 t.start()
 time.sleep(2)
 done1 = True
+time.sleep(0.5)
 donea = False
 def animate():
 	for d in itertools.cycle(['|', '/', '-', '\\']):
