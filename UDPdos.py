@@ -38,6 +38,7 @@ while 1:
 	print "%s Packets: %s Port: %s "%(sent, victim, vport)
 
 def colordos():
+	from colorsys import hsv_to_rgb
 	while 1:
 		if time.time() > timeout:
 			break		
