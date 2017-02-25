@@ -1,4 +1,5 @@
 import socket, sys, os, time, itertools, threading, speech, console
+from colorsys import hsv_to_rbg
 console.set_font()
 console.set_color()
 if len(sys.argv) > 1:
@@ -21,7 +22,8 @@ else:
 	print "       -+- Color Options -+-"
 	console.set_color()
 	print "      -+--=:=-  -+-  -=:=--+-"
-	print ""
+	console.set_color(1,1,1)
+	print "            - rainbow -      "
 	console.set_color(255, 0, 0)
 	print "      -+--=:=-  red  -=:=--+-"
 	console.set_color(255, 255, 0)
@@ -48,6 +50,11 @@ if sys.argv[2] == "aqua":
 	color = "aqua"
 if sys.argv[2] == "sexy":
 	color = "sexy"
+if sys.argv[2] == "rainbow":
+	from UDPdos import colordos
+	colordos()
+	console.set_color()
+	sys.exit()
 if int(sys.argv[1]) == 1:
 	import thelogo
 if sys.argv[2] == "debug":
