@@ -1,5 +1,4 @@
 import socket, sys, os, time, itertools, threading, speech, console
-from colorsys import hsv_to_rbg
 console.set_font()
 console.set_color()
 if len(sys.argv) > 1:
