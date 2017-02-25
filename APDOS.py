@@ -51,7 +51,6 @@ if sys.argv[2] == "sexy":
 	color = "sexy"
 if sys.argv[2] == "rainbow":
 	color = "red"
-	sys.exit()
 if int(sys.argv[1]) == 1:
 	import thelogo
 if sys.argv[2] == "debug":
