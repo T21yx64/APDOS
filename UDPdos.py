@@ -18,6 +18,7 @@ duration = input(' -+- Run: ')
 console.set_color()
 print ""
 timeout = time.time() + duration
+hue = 0.45
 sent = 0
 while 1:
 	if time.time() > timeout:
