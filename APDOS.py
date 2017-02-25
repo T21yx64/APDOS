@@ -50,9 +50,7 @@ if sys.argv[2] == "aqua":
 if sys.argv[2] == "sexy":
 	color = "sexy"
 if sys.argv[2] == "rainbow":
-	from UDPdos import colordos
-	colordos()
-	console.set_color()
+	color = "red"
 	sys.exit()
 if int(sys.argv[1]) == 1:
 	import thelogo
@@ -86,6 +84,12 @@ print "###################################"
 print ""
 console.set_font()
 print "     -=-+- -+-=-  -=-+- -+-=-"
+if sys.argv[2] == "rainbow":
+	print ""
+	from UDPdos import colordos
+	colordos()
+	console.set_color()
+	sys.exit()
 console.set_font('AmericanTypewriter', 15)
 print " " * 29 + "- APDOS -"
 console.set_font()
