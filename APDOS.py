@@ -417,6 +417,8 @@ t.start()
 time.sleep(2)
 donea = True
 def udp():
+	from UDPdos import byt
+	byt(strength)
 	import UDPdos
 	import console
 	try:
