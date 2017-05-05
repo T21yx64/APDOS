@@ -18,6 +18,7 @@ if not args.verbose:
 
 daemon = args.daemon
 verbose = args.verbose
+strength = args.strength
 
 console.set_font()
 console.set_color()
