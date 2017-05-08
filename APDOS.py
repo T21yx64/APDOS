@@ -1,6 +1,5 @@
-import socket, sys, os, time, itertools, threading, speech, console
+import socket, sys, os, time, itertools, threading, speech, console, argparse
 
-import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--daemon",help="Starts Daemon DOS",action="store_true")
 parser.add_argument("-s", "--strength",help="Controls How Strong The Attack Is (0-9)",type=int,default=1)
@@ -10,11 +9,8 @@ parser.add_argument("-n", "--nohelp",help="Hides Help",action="store_true")
 parser.add_argument("-c", "--color",help="Change Color Theme",default="red")
 args = parser.parse_args()
 
-if not args.verbose:
-	if args.nohelp:
-		pass
-	else:
-		parser.print_help()
+if not args.nohelp:
+	parser.print_help()
 
 daemon = args.daemon
 verbose = args.verbose
