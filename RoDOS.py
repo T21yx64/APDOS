@@ -42,7 +42,7 @@ while 1:
 		s.sendto(data, (target, port))
 		s.sendto(data, (target, port))
 		s.sendto(data, (target, port))
-	except ValueError as e:
-		print e
+	except:
+		pass
 	sent = sent + 5
 	print "%s Packets: %s Port: %s "%(sent, target, port)
