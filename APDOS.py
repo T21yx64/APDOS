@@ -187,7 +187,7 @@ if port == '':
 if type == "skip":
 	type = "0x552810401b"
 	def udp():
-		import UDPdos
+		import RoDOS
 		import console
 		try:
 			if color == "blue":
@@ -414,9 +414,9 @@ t.start()
 time.sleep(2)
 donea = True
 def udp():
-	from UDPdos import byt
+	from RoDOS import byt
 	byt(strength)
-	import UDPdos
+	import RoDOS
 	import console
 	try:
 			if color == "blue":
