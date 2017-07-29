@@ -1,5 +1,10 @@
-from dns import resolver
 import time, sys, threading, argparse
+try:
+	from dns import resolver
+except:
+	print "dnspython not installed"
+	print "DOWNLOAD: https://github.com/rthalley/dnspython"
+	sys.exit()
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--dns",help="DNS Server List",default=["4.2.2.1","4.2.2.2","4.2.2.3","4.2.2.4","4.2.2.5","4.2.2.6"])
