@@ -2,8 +2,8 @@ import time, sys, threading, argparse
 try:
 	from dns import resolver
 except:
-	print "dnspython not installed"
-	print "DOWNLOAD: https://github.com/rthalley/dnspython"
+	print " dnspython is not installed."
+	print " Download: https://github.com/rthalley/dnspython"
 	sys.exit()
 
 parser = argparse.ArgumentParser()
@@ -24,12 +24,17 @@ print """
 
 if not args.nohelp:
 	parser.print_help()
+if not args.target:
+	print " No Target"
+	sys.exit()
+
+s = 0
 servers = args.dns
 host = args.target
 verbose = args.verbose
 res = resolver.Resolver()
-servers = open(servers).read().split("\n")
-s = 0
+if servers != ["4.2.2.1","4.2.2.2","4.2.2.3","4.2.2.4","4.2.2.5","4.2.2.6"]:
+	servers = open(servers).read().split("\n")
 
 def _amp(dns,target,name):
 	try:
