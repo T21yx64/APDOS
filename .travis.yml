@@ -7,3 +7,4 @@ branches:
 sudo: false
 os: Pythonista 3
 script: python thelogo.py
+
