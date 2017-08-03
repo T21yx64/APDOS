@@ -24,6 +24,6 @@ Hello to all the NSA agents out there who might skim over this!
 
 # Argv Numbers Increase Attack
 
-APDOS is not made for malisous use.
+APDOS is not made for malicious use.
 
 I am not responsible for your misconduct.
